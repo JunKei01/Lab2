@@ -4,13 +4,16 @@ def calculate_bmi(height, weight):
     bmi=weight/height**2
     print(bmi)
     if bmi<18.5:
-        x = -1
-        print(x)
+        rslt = -1
+
     elif 18.5<=bmi<=25.0:
-        y = 0
-        print(y)
+        rslt = 0
+
     elif bmi>=25.0:
-        z = 1
-        print(z)
+        rslt = 1
+
+    print(rslt)
+    return rslt
+
 calculate_bmi(weight=57, height=1.73)
 
